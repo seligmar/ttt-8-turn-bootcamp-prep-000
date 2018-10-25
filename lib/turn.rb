@@ -46,7 +46,13 @@ def move(board, user_input, value = "X")
    move(board, user_input, value = "X") 
   display_board(board)
 else while valid_move?(board, index) != TRUE 
-  turn(board)
+   puts "Please enter 1-9:"
+    user_input = gets.to_i-1  
+    input_to_index(user_input)
+    index = user_input 
+  until valid_move?(board, index) 
+   move(board, user_input, value = "X") 
+  display_board(board) 
 end
 end
 end
