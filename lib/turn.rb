@@ -45,7 +45,8 @@ def move(board, user_input, value = "X")
   if valid_move?(board, index) 
    move(board, user_input, value = "X") 
   display_board(board)
-else while valid_move?(board, index) != FALSE 
+else while valid_move?(board, index) != TRUE 
   turn(board)
+end
 end
 end
