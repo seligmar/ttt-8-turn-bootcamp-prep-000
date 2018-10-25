@@ -44,6 +44,6 @@ def move(board, user_input, value = "X")
     index = user_input.to_i-1  
   if valid_move?(board, index) 
    move(board, user_input, value = "X") 
-     
+  display_board(board)
 end
 end
